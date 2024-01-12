@@ -11,6 +11,7 @@ export const LoginButton = ({
     mode= "redirect",
     asChild
 }: LoginButtonProps ) => {
+    
     const onClick = () => {
         console.log('LOGIN BUTTON CLICKED')
     }
