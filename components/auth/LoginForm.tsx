@@ -17,6 +17,8 @@ import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import { FormError } from "../FormError";
+import { FormSuccess } from "../FormSuccess";
 
 export const LoginForm = () => {
     const form = useForm<z.infer<typeof LoginSchema>>({
@@ -79,6 +81,8 @@ export const LoginForm = () => {
                             )}
                         />
                     </div>
+                    <FormError message=""/>
+                    <FormSuccess message=""/>
                     <Button
                         type="submit"
                         className="w-full"
