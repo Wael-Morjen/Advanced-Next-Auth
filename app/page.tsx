@@ -17,10 +17,10 @@ export default function Home() {
           🔐Auth
         </h1>
         <p  className="text-white text-lg">
-          An advanced authentication service
+          An advanced authentication Toolkit
         </p>
         <div>
-          <LoginButton>
+          <LoginButton mode="modal" asChild>
             <Button variant="secondary" size='lg'>
               Sign in
             </Button>
